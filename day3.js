@@ -1,23 +1,4 @@
-
-
-function numberExercise(leccion){
-    this.leccion=leccion;
-    return "exercise :"+leccion+" = ";
-    line();
-}function line() {
-    document.write("<br><br>");
-console.log("<br><br>");
-    }
-    
-
-
-demand();
-phraseConCiclo();
-demandedNumber();
-sumNumber();
-numIniNumFin();
-ExerciseTrece();
-function demand(){
+function exerciseTwelfth(){
     let ask;
     for(i=1;i<10;i++){
     ask=prompt("appends phrase");
@@ -27,7 +8,7 @@ console.log(numberExercise(12)+ask);
 }
 }
 line();
-function phraseConCiclo(){
+function exerciseThirtieth(){
     let contador=0;
 let phrase;
 contador=prompt("enter number to show them \"xTime\"");
@@ -39,7 +20,7 @@ for(let i=0;i<contador;i++){
     }
 }
 line();
-function demandedNumber(){
+function exerciseFourteenth(){
     let contador1=0;
     let askNumber=prompt("enter number to write until where this indicates the times");
 while(contador1<askNumber){
@@ -50,7 +31,7 @@ line();
 }
 }
 line();
-function sumNumber(){
+function exerciseFifteenth(){
 let ask;
 let sum=0;
 ask=prompt("enter number to sum them ");
@@ -62,7 +43,7 @@ console.log(numberExercise(15)+sum);
 line();
 }
 line();
-function numIniNumFin(){
+function exerciseSixteenth(){
     let ask1;
     let contador=0;
     let ask2;
@@ -77,23 +58,33 @@ function numIniNumFin(){
 }
 }
 line();
-function ExerciseTrece(){
-    let NumberToRepeatPhrase=prompt("enter number to repeat phrase");
-    let contador=0;
-    while(contador<NumberToRepeatPhrase){
-    let phrase=prompt("appends a phrase");
-    contador++;
-    document.write(numberExercise("trece")+phrase+"<br>");
-    console.log(numberExercise("trece")+phrase+"<br>");
-      }
-   }
+function exerciseSeventeenth(){
+    let luck=Math.round(Math.random()*3);
+    let flag=true;
+    while(flag){
+        let enterNumber=prompt("enter number to play ");
+    
+    if(enterNumber!=luck){
+        document.write(numberExercise(17)+"bed luck"+"<br>");
+     console.log(numberExercise(17)+"bed luck"+"<br>");
+    }
+        if(enterNumber==luck){
+    document.write(numberExercise(17)+"good luck"+"<br>");
+    console.log(numberExercise(17)+"goog luck"+"<br>");
+      flag=false;
+      
+    }
+}}
+   
+   
 
 
-
-
-
-
-
-
-
-
+   function numberExercise(leccion){
+    this.leccion=leccion;
+    return "exercise :"+leccion+" = ";
+    line();
+}function line() {
+    document.write("<br><br>");
+console.log("<br><br>");
+    }
+    

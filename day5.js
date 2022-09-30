@@ -58,21 +58,4 @@ function day(date,exercise){
     return "day : "+date+" "+" exercise "+exercise+" = ";
 }
 
-//let mensaje1 = prompt("Escriba un mensaje");
-let array=["abcd"];
-let c;
-
-let array2=[];
-
-for(i=0;i<array.length;i++){
- 
-document.write(array[i].length);
-if(array[i].substring("cde")){
-   document.write("hi");}} 
-
-let mensaje1 = prompt("Escriba un mensaje");
-let mensaje2 = prompt("Escriba un mensaje");
-
-for(i=0;i<)
-
 
