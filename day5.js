@@ -1,4 +1,31 @@
 
+function exerciseTwentyEight(){
+    let array1=["hello"];
+    let array2=["world"];
+    let array3=[];
+    
+    //array1=array1.replaceAll(" ","");
+    
+    
+    for(let i=0;i<array1.length;i++){
+    if(array3.includes(array1[i])){
+    array3.push(array1[i]);	
+    }
+    }
+    for(let i=0;i<array2.length;i++){
+    if(array1.includes(array2[i])){
+    array3.push(array2[i]);
+    }
+}
+    if(array3.length===0){
+    document.write("not letters");
+    }
+    else{
+    document.write(`letters are ${array3}`);
+    }
+    
+    }
+
 function exerciseTwentySeventh(){
 const frase = prompt("appends a phrase to jump line by finish word:");
 console.log(day(5,27)+frase.split(' ').join("<br>"));
@@ -58,4 +85,5 @@ function day(date,exercise){
     return "day : "+date+" "+" exercise "+exercise+" = ";
 }
 
-
+//let mensaje1 = prompt("Escriba un mensaje");
+//let mensaje = prompt("Escriba un mensaje");
